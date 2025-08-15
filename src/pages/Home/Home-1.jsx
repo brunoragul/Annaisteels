@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import constructionImg from '../../images/Construction site with a tower crane construction of residential buildings panoramic view of the construction of skyscrapers landscape with a modern city eps 10 _ Premium AI-generated image (1).jpeg';
 export default function UpcomingEvents() {
   return (
     <div className="bg-[#f4fbf7] py-12 px-4 md:px-20">
@@ -11,7 +11,7 @@ export default function UpcomingEvents() {
         
         {/* Left Image */}
         <img
-          src="./src/images/Construction site with a tower crane construction of residential buildings panoramic view of the construction of skyscrapers landscape with a modern city eps 10 _ Premium AI-generated image (1).jpeg"
+          src={constructionImg}
           alt="Cement Workshop"
           className="w-full max-w-4xl h-80 md:h-[18rem] lg:h-[30rem] object-cover rounded-lg"
         />
