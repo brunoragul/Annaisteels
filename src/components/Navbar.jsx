@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Logo from '../images/lumberImage.jpg';
+import Cart from '../images/add-to-cart.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +22,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-4">
         {/* Left - Logo */}
         <div className="flex items-center space-x-4">
-          <img src="./src/images/lumberImage.jpg" alt="logo" className="w-12 h-12" />
+          <img src={Logo} alt="logo" className="w-12 h-12" />
           <h1 className="text-xxl font-bold text-white">Annai Steels</h1>
         </div>
 
@@ -57,7 +59,7 @@ export default function Navbar() {
             />
             <span className="absolute left-2 top-1.5 text-sm">🔍</span>
           </div>
-          <img src="./src/images/add-to-cart.png" alt="cart" className="w-8 h-8" />
+          <img src={Cart} alt="cart" className="w-8 h-8" />
         </div>
       </div>
 

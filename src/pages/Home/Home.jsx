@@ -4,6 +4,8 @@ import Producthighlights from "./Home-3";
 import ReviewSection from "./ReviewSection";
 import ReviewIntro from "./reviewIntro";
 import Footer from "./Footer";
+import MainBanner from '../../images/pexels-purvesh-photography-34809134-32826199.jpg';
+import ConstructionSite from '../../images/pexels-500photos-com-15338-93400.jpg';
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -12,7 +14,7 @@ export default function Home() {
   {/* Top Image */}
   <div className="flex justify-center py-12">
     <img
-      src="./src/images/pexels-purvesh-photography-34809134-32826199.jpg"
+      src={MainBanner}
       className="rounded-xl w-full max-w-7xl h-64 md:h-96 object-cover"
       alt="Main Banner"
     />
@@ -24,7 +26,7 @@ export default function Home() {
     {/* Left Image */}
     <div className="flex justify-center">
       <img
-        src="./src/images/pexels-500photos-com-15338-93400.jpg"
+        src={ConstructionSite}
         alt="Construction site"
         className="w-full max-w-4xl h-80 md:h-[28rem] lg:h-[34rem] object-cover rounded-xl"
       />

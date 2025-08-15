@@ -1,5 +1,6 @@
 import { Search, ChevronDown } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import ConstructionBanner from '../images/pexels-sevenstormphotography-439416 (1).jpg';
 import axios from 'axios';
 
 export default function ProductsList() {
@@ -23,7 +24,7 @@ useEffect(() => {
       {/* Header */}
       <div className="flex flex-col items-center mb-10">
         <img
-          src="./src/images/pexels-sevenstormphotography-439416 (1).jpg"
+          src={ConstructionBanner}
           alt="Construction Banner"
           className="w-full max-w-6xl h-56 md:h-72 object-cover rounded-xl shadow-md"
         />
